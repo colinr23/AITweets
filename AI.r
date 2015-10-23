@@ -50,4 +50,3 @@ png("wordCloud_14day.png", width=8,height=6, units="in", res=300)
 dev.off()
 
 
-
