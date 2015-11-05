@@ -80,11 +80,11 @@ null device
 > head(ap.d)
              word freq
 ebola       ebola  254
-big           big  240
-scienc     scienc  230
-miss         miss  228
-opportun opportun  224
-mer           mer  209
+big           big  241
+scienc     scienc  231
+miss         miss  225
+opportun opportun  225
+mer           mer  213
 > pal2 <- brewer.pal(8,"Dark2")
 > png("wordCloud_14day.png", width=8,height=6, units="in", res=300)
 >     wordcloud(ap.d$word,ap.d$freq, scale=c(6,.2),min.freq=3,max.words=Inf, random.order=FALSE, rot.per=.15, colors=pal2)
@@ -96,4 +96,4 @@ null device
 > 
 > proc.time()
    user  system elapsed 
-   7.30    0.18   10.67 
+   5.78    0.26    6.11 
