@@ -79,8 +79,8 @@ null device
 > ap.d <- data.frame(word = names(ap.v),freq=ap.v)
 > head(ap.d)
              word freq
-ebola       ebola  254
-big           big  241
+ebola       ebola  255
+big           big  239
 scienc     scienc  231
 miss         miss  225
 opportun opportun  225
@@ -96,4 +96,4 @@ null device
 > 
 > proc.time()
    user  system elapsed 
-   5.78    0.26    6.11 
+   6.00    0.29    6.38 
