@@ -79,9 +79,9 @@ null device
 > ap.d <- data.frame(word = names(ap.v),freq=ap.v)
 > head(ap.d)
                word freq
-turkey       turkey  604
-thanksgiv thanksgiv  408
-birdflu     birdflu  224
+turkey       turkey  643
+thanksgiv thanksgiv  428
+birdflu     birdflu  222
 fact           fact  206
 healthcar healthcar  202
 holist       holist  202
@@ -96,4 +96,4 @@ null device
 > 
 > proc.time()
    user  system elapsed 
-   9.34    0.34    9.73 
+   9.71    0.28   10.07 
