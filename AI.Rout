@@ -79,11 +79,11 @@ null device
 > ap.d <- data.frame(word = names(ap.v),freq=ap.v)
 > head(ap.d)
                word freq
-turkey       turkey  643
-thanksgiv thanksgiv  428
-birdflu     birdflu  222
+turkey       turkey  660
+thanksgiv thanksgiv  434
+birdflu     birdflu  223
 fact           fact  206
-healthcar healthcar  202
+healthcar healthcar  203
 holist       holist  202
 > pal2 <- brewer.pal(8,"Dark2")
 > png("wordCloud_14day.png", width=8,height=6, units="in", res=300)
@@ -96,4 +96,4 @@ null device
 > 
 > proc.time()
    user  system elapsed 
-   9.71    0.28   10.07 
+  10.62    0.37   11.04 
