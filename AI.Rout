@@ -79,28 +79,20 @@ null device
 > ap.d <- data.frame(word = names(ap.v),freq=ap.v)
 > head(ap.d)
              word freq
-franc       franc  379
-outbreak outbreak  378
-turkey     turkey  352
+outbreak outbreak  387
+franc       franc  383
+turkey     turkey  353
 year         year  289
-first       first  239
-detect     detect  235
+first       first  241
+detect     detect  237
 > pal2 <- brewer.pal(8,"Dark2")
 > png("wordCloud_14day.png", width=8,height=6, units="in", res=300)
 >     wordcloud(ap.d$word,ap.d$freq, scale=c(6,.2),min.freq=3,max.words=Inf, random.order=FALSE, rot.per=.15, colors=pal2)
 Warning messages:
 1: In wordcloud(ap.d$word, ap.d$freq, scale = c(6, 0.2), min.freq = 3,  :
-  sentineltribun could not be fit on page. It will not be plotted.
+  httpstcoacfuy0crwv could not be fit on page. It will not be plotted.
 2: In wordcloud(ap.d$word, ap.d$freq, scale = c(6, 0.2), min.freq = 3,  :
-  teamfollowback could not be fit on page. It will not be plotted.
-3: In wordcloud(ap.d$word, ap.d$freq, scale = c(6, 0.2), min.freq = 3,  :
-  washington could not be fit on page. It will not be plotted.
-4: In wordcloud(ap.d$word, ap.d$freq, scale = c(6, 0.2), min.freq = 3,  :
-  what’ could not be fit on page. It will not be plotted.
-5: In wordcloud(ap.d$word, ap.d$freq, scale = c(6, 0.2), min.freq = 3,  :
-  winter could not be fit on page. It will not be plotted.
-6: In wordcloud(ap.d$word, ap.d$freq, scale = c(6, 0.2), min.freq = 3,  :
-  wrong could not be fit on page. It will not be plotted.
+  youshouldknow could not be fit on page. It will not be plotted.
 > dev.off()
 null device 
           1 
@@ -109,4 +101,4 @@ null device
 > 
 > proc.time()
    user  system elapsed 
-  11.91    0.43   12.94 
+  11.01    0.42   11.52 
