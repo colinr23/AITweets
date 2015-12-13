@@ -80,7 +80,7 @@ null device
 > head(ap.d)
                word freq
 franc         franc  423
-outbreak   outbreak  271
+outbreak   outbreak  272
 case           case  269
 report       report  222
 southwest southwest  211
@@ -96,4 +96,4 @@ null device
 > 
 > proc.time()
    user  system elapsed 
-   8.70    0.24    9.01 
+   8.79    0.37    9.37 
