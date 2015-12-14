@@ -80,9 +80,9 @@ null device
 > head(ap.d)
                word freq
 franc         franc  423
-outbreak   outbreak  272
-case           case  269
-report       report  222
+case           case  266
+outbreak   outbreak  263
+report       report  224
 southwest southwest  211
 three         three  192
 > pal2 <- brewer.pal(8,"Dark2")
@@ -96,4 +96,4 @@ null device
 > 
 > proc.time()
    user  system elapsed 
-   8.79    0.37    9.37 
+   8.93    0.34    9.28 
