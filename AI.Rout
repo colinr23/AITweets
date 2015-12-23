@@ -79,10 +79,10 @@ null device
 > ap.d <- data.frame(word = names(ap.v),freq=ap.v)
 > head(ap.d)
              word freq
-outbreak outbreak  264
-franc       franc  247
-french     french  201
-new           new  170
+outbreak outbreak  356
+french     french  290
+franc       franc  251
+new           new  171
 spread     spread  157
 region     region  149
 > pal2 <- brewer.pal(8,"Dark2")
@@ -96,4 +96,4 @@ null device
 > 
 > proc.time()
    user  system elapsed 
-   9.20    0.35    9.71 
+   9.26    0.32    9.59 
