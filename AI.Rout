@@ -79,12 +79,12 @@ null device
 > ap.d <- data.frame(word = names(ap.v),freq=ap.v)
 > head(ap.d)
          word freq
-china   china  439
-woman   woman  376
-h5n6     h5n6  330
-health health  274
-hong     hong  226
-kong     kong  226
+china   china  503
+woman   woman  381
+h5n6     h5n6  366
+health health  283
+new       new  238
+hong     hong  229
 > pal2 <- brewer.pal(8,"Dark2")
 > png("wordCloud_14day.png", width=8,height=6, units="in", res=300)
 >     wordcloud(ap.d$word,ap.d$freq, scale=c(6,.2),min.freq=3,max.words=Inf, random.order=FALSE, rot.per=.15, colors=pal2)
@@ -96,4 +96,4 @@ null device
 > 
 > proc.time()
    user  system elapsed 
-  10.95    0.39   11.41 
+  12.13    0.34   12.49 
