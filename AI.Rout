@@ -82,23 +82,14 @@ null device
 > head(ap.d)
        word freq
 bird   bird  227
-virus virus  205
-state state  202
-ebola ebola  190
 kill   kill  180
+ebola ebola  178
+state state  174
 kano   kano  166
+virus virus  158
 > pal2 <- brewer.pal(8,"Dark2")
 > png("wordCloud_14day.png", width=8,height=6, units="in", res=300)
 >     wordcloud(ap.d$word,ap.d$freq, scale=c(6,.2),min.freq=3,max.words=Inf, random.order=FALSE, rot.per=.15, colors=pal2)
-Warning messages:
-1: In wordcloud(ap.d$word, ap.d$freq, scale = c(6, 0.2), min.freq = 3,  :
-  ngrguardiannew could not be fit on page. It will not be plotted.
-2: In wordcloud(ap.d$word, ap.d$freq, scale = c(6, 0.2), min.freq = 3,  :
-  understand could not be fit on page. It will not be plotted.
-3: In wordcloud(ap.d$word, ap.d$freq, scale = c(6, 0.2), min.freq = 3,  :
-  universita could not be fit on page. It will not be plotted.
-4: In wordcloud(ap.d$word, ap.d$freq, scale = c(6, 0.2), min.freq = 3,  :
-  yunnan could not be fit on page. It will not be plotted.
 > dev.off()
 null device 
           1 
@@ -107,4 +98,4 @@ null device
 > 
 > proc.time()
    user  system elapsed 
-  14.64    0.48   15.92 
+  12.65    0.51   14.29 
