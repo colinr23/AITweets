@@ -84,9 +84,9 @@ null device
 bird       bird   74
 karachi karachi   66
 news       news   65
-virus     virus   62
-h7n9       h7n9   60
-got         got   56
+virus     virus   57
+h7n9       h7n9   54
+lift       lift   54
 > pal2 <- brewer.pal(8,"Dark2")
 > png("wordCloud_14day.png", width=8,height=6, units="in", res=300)
 >     wordcloud(ap.d$word,ap.d$freq, scale=c(6,.2),min.freq=3,max.words=Inf, random.order=FALSE, rot.per=.15, colors=pal2)
@@ -99,4 +99,4 @@ null device
 > 
 > proc.time()
    user  system elapsed 
-  12.57    0.37   18.19 
+  11.88    0.14   12.88 
