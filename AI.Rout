@@ -23,9 +23,11 @@ Type 'q()' to quit R.
 > x <- read.csv("test2_clean.csv")
 > removeURL <- function(x) gsub("http[^[:space:]]*", "", x)
 > library(plyr)
+Warning message:
+package 'plyr' was built under R version 3.2.5 
 > library(ggplot2)
 Warning message:
-package 'ggplot2' was built under R version 3.2.3 
+package 'ggplot2' was built under R version 3.2.5 
 > library(XML)
 > library(tm)
 Loading required package: NLP
@@ -80,17 +82,16 @@ null device
 > ap.v <- sort(rowSums(ap.m),decreasing=TRUE)
 > ap.d <- data.frame(word = names(ap.v),freq=ap.v)
 > head(ap.d)
-             word freq
-bird         bird   72
-karachi   karachi   66
-news         news   59
-outbreak outbreak   56
-virus       virus   54
-swine       swine   51
+                   word freq
+outbreak       outbreak  569
+germani         germani  471
+report           report  399
+switzerland switzerland  335
+europ             europ  318
+new                 new  310
 > pal2 <- brewer.pal(8,"Dark2")
 > png("wordCloud_14day.png", width=8,height=6, units="in", res=300)
 >     wordcloud(ap.d$word,ap.d$freq, scale=c(6,.2),min.freq=3,max.words=Inf, random.order=FALSE, rot.per=.15, colors=pal2)
-There were 50 or more warnings (use warnings() to see the first 50)
 > dev.off()
 null device 
           1 
@@ -99,4 +100,4 @@ null device
 > 
 > proc.time()
    user  system elapsed 
-  11.59    0.31   16.56 
+  13.65    0.63   16.87 
